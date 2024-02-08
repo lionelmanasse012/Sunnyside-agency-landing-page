@@ -332,16 +332,19 @@ li {
 }
 
 .footer__nav {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 45px;
   margin-bottom: 2rem;
   text-align: center;
-  margin: 1rem 0;
+  margin: 1rem 0; */
 }
 
 .footer__list {
-  width: 20%;
+  /* max-width: 20%; */
+  max-width: 350px;
+  margin: 40px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -354,19 +357,33 @@ li {
   color: var(--black-degraded) !important;
   transition: var(--transition);
 }
+.footer__item a {
+  font-size: 1.3rem;
+}
 
 .footer__item:hover {
   color: var(--white-color) !important;
+}
+.footer__medias {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  gap: 30px;
+}
+.footer__medias li {
+  transition: all .3s ease;
+}
+.footer__medias li:hover {
+  transform: scale(1.1);
 }
 
 /* ------------------ Responsive ---------------------  */
 
 @media screen and (max-width: 1155px) {
-  .testimonie{
+  .testimonie {
     max-width: 250px;
   }
 }
-
 
 @media screen and (max-width: 1024px) {
   .nav__list {
@@ -383,17 +400,17 @@ li {
     padding: 9rem 1rem;
     text-align: center;
   }
-  .about{
+  .about {
     display: grid;
-    grid-template-areas: 
-        "about__image"
-        "about__description";
+    grid-template-areas:
+      "about__image"
+      "about__description";
   }
-  .about__description{
+  .about__description {
     grid-area: about__description;
     text-align: center;
   }
-  .about__image{
+  .about__image {
     grid-area: about__image;
   }
   .about__title {
@@ -404,51 +421,50 @@ li {
     line-height: 30px;
   }
 
-  .expertise__container{
+  .expertise__container {
     display: grid;
   }
-  .footer__logo{
+  .footer__logo {
     display: block;
     margin: 2rem auto;
   }
-  .footer__nav{
-    display: inline-block;
-    margin: 0 auto;
+  .footer__nav {
+    /* display: inline-block;
+    margin: 0 auto; */
   }
   /* .about {
     flex-direction: column-reverse;
   } */
 }
 @media screen and (max-width: 945px) {
-  .testimonies__container{
+  .testimonies__container {
     display: grid;
     justify-content: center;
     gap: 50px;
   }
-  .testimonie{
+  .testimonie {
     max-width: 400px;
     min-width: 300px;
     line-height: 25px;
   }
-  .testimonies__title{
+  .testimonies__title {
     padding-top: 40px;
     font-size: 1rem;
     letter-spacing: 6px;
   }
-  .gallery{
+  .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .footer__logo{
+  .footer__logo {
     display: block;
     margin: 2rem auto;
   }
-  .footer__nav{
-    display: inline-block;
-    margin: 0 auto;
+  .footer__nav {
+    /* display: inline-block;
+    margin: 0 auto; */
   }
 }
-
 
 @media screen and (min-width: 1025px) {
   .nav__list {
